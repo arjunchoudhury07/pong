@@ -18,12 +18,12 @@ int main() {
   InitAudioDevice();
 
   Music game_music =
-      LoadMusicStream("/home/jemo/code/c/pong/assets/music/game_music.mp3");
+      LoadMusicStream("./assets/music/game_music.mp3");
   PlayMusicStream(game_music);
   Sound paddle_hit =
-      LoadSound("/home/jemo/code/c/pong/assets/music/paddle_hit.wav");
+      LoadSound("./assets/music/paddle_hit.wav");
   Sound game_over =
-      LoadSound("/home/jemo/code/c/pong/assets/music/game_over.wav");
+      LoadSound("./assets/music/game_over.wav");
 
   SetTargetFPS(60);
   while (!WindowShouldClose()) {
